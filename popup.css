@@ -1,0 +1,24 @@
+/* popup.css */
+
+body {
+    width: 400px; /* Adjust the width as needed */
+    margin: 0;
+    padding: 20px; /* Add some padding for content */
+    font-family: 'Roboto', sans-serif; /* Example font */
+    background-color: #FFFFFF; /* Background color */
+}
+
+/* Style for the header of the popup */
+.header {
+    font-size: 16px;
+    color: #333333; /* Dark gray text color */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Style for the main content area */
+.content {
+    font-size: 14px;
+    color: #666666; /* Lighter gray text color */
+}
+
+/* Add more specific styles as needed */

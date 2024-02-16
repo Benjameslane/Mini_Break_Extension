@@ -1,7 +1,7 @@
 {
     chrome.alarms.create("breakReminder", {
-        delayInMinutes: 30,
-        periodInMinutes: 30
+        delayInMinutes: 1,
+        periodInMinutes: 1
     });
 
     chrome.alarms.onAlarm.addListener((alarm) => {

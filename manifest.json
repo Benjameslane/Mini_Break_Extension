@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Mini-Game-Break",
-    "version": "1.0",
+    "name": "Break Buddy",
+    "version": "1.0.0",
     "permissions": ["alarms", "notifications"],
     "background": {
       "service_worker": "background.js"
@@ -9,15 +9,13 @@
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
+      
+        "128": "icons/BLO.png"
       }
     },
     "icons": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
+     
+      "128": "icons/BLO.png"
     }
   }
   
