@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Break Time Reminder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Time Game</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+        }
+        .game-icon {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .game-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>Time for a Break!</h1>
-    <p>Click the Break Buddy icon in your Chrome toolbar to start your break.</p>
+    <h1>Enjoy Your Break!</h1>
+    <p>Play "Queen Of Egypt Cleopatra's Jewels" to relax and refresh your mind.</p>
+    <!-- Update the src attribute to the path of your game icon within the extension's directory -->
+    <!-- Update the href attribute to the direct URL where users can play the game -->
+    <a href="https://htmlgames.com/?game=QueenOfEgyptCleopatrasJewels" target="_blank">
+        <img src="icons/game-icon.png" alt="Play Queen Of Egypt Cleopatra's Jewels" class="game-icon" width="200" height="200">
+    </a>
 </body>
 </html>
