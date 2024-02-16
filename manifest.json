@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Break Buddy",
     "version": "1.0.0",
-    "permissions": ["alarms", "notifications"],
+    "permissions": ["alarms", "notifications", "activeTab"],
     "background": {
       "service_worker": "background.js"
     },
@@ -16,6 +16,12 @@
     "icons": {
      
       "128": "icons/BLO.png"
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["play-sound.js"]
+        }
+    ]
   }
   
