@@ -13,7 +13,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
             iconUrl: "icons/BLO.png",
             title: "Time for a Break!",
             message: "Take a 5-minute break. Click your extension icon to start your break",
-            buttons: [{ title: "Click Extension Icon To Start Your Break" }]
+            buttons: [{ title: "Click Here To Start Break" }] // This button title might be misleading since the button action is now opening a placeholder page
         });
     }
 });
@@ -21,16 +21,13 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 // Listener for notification button click
 chrome.notifications.onButtonClicked.addListener((notificationId, buttonIndex) => {
     if (buttonIndex === 0) { // Assuming "Start Break" is the first button
-        // This is where you could handle opening a new tab or other action
-        console.log("Start Break button clicked.");
-        // Example: Open a new tab with a break activity page
-        // chrome.tabs.create({url: 'break-activities.html'}); // Adjust the URL as needed
+        // Open a new tab with the placeholder page when the button is clicked
+        chrome.tabs.create({url: chrome.runtime.getURL('placeholder.html')});
     }
+});
 
-    // Listener for when the notification itself is clicked
+// Listener for when the notification itself is clicked
 chrome.notifications.onClicked.addListener((notificationId) => {
     // Open a new tab with the placeholder page
     chrome.tabs.create({url: chrome.runtime.getURL('placeholder.html')});
-});
-
 });
