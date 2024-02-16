@@ -1,7 +1,7 @@
 // Set up the break reminder alarm
 chrome.alarms.create("breakReminder", {
-    delayInMinutes: 1, // For testing purposes; change to 30 for actual use
-    periodInMinutes: 1 // For testing purposes; change to 30 for actual use
+    delayInMinutes: 30, // For testing purposes; change to 30 for actual use
+    periodInMinutes: 30 // For testing purposes; change to 30 for actual use
 });
 
 // Listener for the alarm

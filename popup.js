@@ -20,4 +20,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Play break sound
     var audio = new Audio(chrome.runtime.getURL('Sound/break-time.mp3'));
     audio.play().catch(e => console.error("Audio play failed:", e));
+
+    // Add event listener for opening the break page
+    document.getElementById('openBreakPage').addEventListener('click', function() {
+        chrome.tabs.create({url: 'placeholder.html'});
+    });
 });
