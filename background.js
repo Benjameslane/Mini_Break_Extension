@@ -12,8 +12,8 @@ chrome.alarms.onAlarm.addListener((alarm) => {
             type: "basic",
             iconUrl: "icons/BLO.png",
             title: "Time for a Break!",
-            message: "Take a 5-minute break. Click here to start your break timer and play a mini-game.",
-            buttons: [{ title: "Start Break" }]
+            message: "Take a 5-minute break. Click your extension icon to start your break",
+            buttons: [{ title: "Click Extension Icon To Start Your Break" }]
         });
     }
 });
@@ -26,4 +26,11 @@ chrome.notifications.onButtonClicked.addListener((notificationId, buttonIndex) =
         // Example: Open a new tab with a break activity page
         // chrome.tabs.create({url: 'break-activities.html'}); // Adjust the URL as needed
     }
+
+    // Listener for when the notification itself is clicked
+chrome.notifications.onClicked.addListener((notificationId) => {
+    // Open a new tab with the placeholder page
+    chrome.tabs.create({url: chrome.runtime.getURL('placeholder.html')});
+});
+
 });

@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Break Buddy",
     "version": "1.0.0",
-    "permissions": ["alarms", "notifications", "activeTab"],
+    "permissions": ["alarms", "notifications", "activeTab", "tabs"],
     "background": {
       "service_worker": "background.js"
     },
