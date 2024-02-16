@@ -12,7 +12,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
             type: "basic",
             iconUrl: "icons/BLO.png",
             title: "Time for a Break!",
-            message: "Take a 5-minute break. Click your extension icon to start your break",
+            message: "Take a 5-minute break!",
             buttons: [{ title: "Click Here To Start Break" }] // This button title might be misleading since the button action is now opening a placeholder page
         });
     }
