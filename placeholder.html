@@ -3,29 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>Word Scramble Game | CodingNepal</title>
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="game.css">
     <link rel="stylesheet" href="placeholder.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="game.js" defer></script>
     <script src="script.js" defer></script>
-    
 </head>
 <body>
     <div class="page-container">
         <div class="top-half">
             <img src="icons/BLO.png" alt="Break Icon" style="width: 100px; margin-bottom: 10px;">
-            
             <h2>Enjoy your break!</h2>
-            <!-- Timer Display -->
             <div id="break-timer" style="font-size: 24px; margin-top: 20px;">Break Time Left: <span>05:00</span></div>
-            
         </div>
-
-        
         <div class="bottom-half">
-            
             <div class="container">
-                
                 <h2>Word Scramble</h2>
                 <div class="content">
                     <p class="word"></p>
@@ -40,9 +33,15 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal added here, directly under the game container -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal-text">Some text in the Modal...</p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="breakTimer.js" defer></script>
-
 </body>
 </html>

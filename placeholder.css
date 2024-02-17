@@ -1,9 +1,10 @@
-/* Contents of placeholderStyles.css */
+/* placeholder.css */
 .page-container {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Use the full height of the viewport */
+    height: 100vh;
 }
+
 .top-half {
     flex: 1;
     display: flex;
@@ -11,18 +12,30 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: #6379A6
 }
 
 .bottom-half {
     flex: 1;
-    overflow: auto; /* Adds scroll to the game section if content overflows */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
-/* Adjustments for the game container to ensure it does not exceed its half */
-.container {
-    max-height: 100%;
-    overflow: auto; /* Adds scroll to the game container if content overflows */
-}
+
 #break-timer {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.mission-statement, .game-title {
+    margin: 20px 0;
     font-size: 20px;
-    margin-top: 20px;
+    color: #6379A6; /* Adding color for readability */
+}
+
+/* Ensuring everything within bottom-half is centered */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
