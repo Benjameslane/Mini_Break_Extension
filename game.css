@@ -13,7 +13,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #5372F0;
+  background: #6379A6;
 }
 .container{
   width: 440px;
@@ -24,8 +24,9 @@ body{
 .container h2{
   font-size: 25px;
   font-weight: 500;
-  padding: 16px 25px;
+  padding: 25px 25px;
   border-bottom: 1px solid #ccc;
+  
 }
 .container .content{
   margin: 25px 20px 35px;

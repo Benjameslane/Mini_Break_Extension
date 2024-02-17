@@ -12,6 +12,7 @@
     align-items: center;
     text-align: center;
 }
+
 .bottom-half {
     flex: 1;
     overflow: auto; /* Adds scroll to the game section if content overflows */
@@ -20,4 +21,8 @@
 .container {
     max-height: 100%;
     overflow: auto; /* Adds scroll to the game container if content overflows */
+}
+#break-timer {
+    font-size: 20px;
+    margin-top: 20px;
 }
