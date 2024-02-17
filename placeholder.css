@@ -1,0 +1,23 @@
+/* Contents of placeholderStyles.css */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Use the full height of the viewport */
+}
+.top-half {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bottom-half {
+    flex: 1;
+    overflow: auto; /* Adds scroll to the game section if content overflows */
+}
+/* Adjustments for the game container to ensure it does not exceed its half */
+.container {
+    max-height: 100%;
+    overflow: auto; /* Adds scroll to the game container if content overflows */
+}
